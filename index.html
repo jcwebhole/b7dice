@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>DICE</title>
+</head>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center mt-5 mb-3">
+        <h1>Let's Play!</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-4 text-center">
+        <div id="player1">
+          <div id="player1dice">
+            <div id="player1die1" class="playerdie1 playerdice">
+              
+            </div>
+            <div id="player1die2" class="playerdie2 playerdice">
+              
+            </div>
+<!--             <button class="btn btn-success" id="roll1" onclick="rollPlayer(1)">Roll Player 1</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-4 text-center">
+        <div id="player2">
+          <div id="player2dice">
+            <div id="player2die1" class="playerdie1 playerdice">
+              
+            </div>
+            <div id="player2die2" class="playerdie2 playerdice">
+              
+            </div>
+<!--             <button class="btn btn-success" id="roll2" onclick="rollPlayer(2)">Roll Player 2</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <div id="player1score" class="playerscore">
+          Player 1 Score: 0
+        </div>
+        <div id="player2score" class="playerscore">
+          Player 2 Score: 0
+        </div>
+        <div id="tiescore" class="playerscore">
+          TIE: 0
+        </div>
+
+        <button class="btn btn-success" onclick="rollBoth()" id="roll">Roll Both</button>
+        <h2 id="message"></h2>
+      </div>
+    </div>
+
+  </div>
+
+<!-- Small modal -->
+<button id="hideThis" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Small modal</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Game Over</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center" id="winner">
+        Player <span id="pWhat">0</span> Wins!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="location.reload()">Restart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

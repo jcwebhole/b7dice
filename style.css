@@ -1,0 +1,29 @@
+.playerdice{
+	font-size: 40px;
+	width: 64px;
+	height: 64px;
+	background-image: url('images/dice.png');
+	display: inline-block;
+}
+.playerdie1{
+	/*float:left;*/
+}
+.playerdie2{
+	/*float:right;*/
+}
+.playerscore{
+	clear: both;
+	font-size: 30px;
+}
+#hideThis{
+	display: none;
+}
+#winner{
+	font-size: 30px;
+}
+#player1 .playerdice{
+	background-position: 0px -320px;
+}
+#player2 .playerdice{
+	background-position: 0px -64px;
+}
